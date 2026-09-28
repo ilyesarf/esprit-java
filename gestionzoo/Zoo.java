@@ -33,4 +33,12 @@ public class Zoo {
 
         return false;
     }
+
+    public void printAnimals(){
+        for (int i=0; i<this.animals.length; i++){
+            if (this.animals[i])
+                System.out.println(this.animals[i]);
+        }
+    }
+
 }
