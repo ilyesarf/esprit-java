@@ -36,7 +36,7 @@ public class Zoo {
 
     public void printAnimals(){
         for (int i=0; i<this.animals.length; i++){
-            if (this.animals[i])
+            if (this.animals[i] != null)
                 System.out.println(this.animals[i]);
         }
     }

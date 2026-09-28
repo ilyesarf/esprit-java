@@ -72,6 +72,8 @@ public class ZooManagement {
         System.out.println(myZoo.toString());
         System.out.println(zoo2);
 
-        myZoo.printAnimals(); 
+        myZoo.printAnimals();
+        zoo2.printAnimals();
+
     }
 }
