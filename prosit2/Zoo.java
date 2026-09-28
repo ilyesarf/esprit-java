@@ -22,4 +22,15 @@ public class Zoo {
     public String toString() {
         return "Zoo : " + name + ", ville : " + city + ", nombre de cages : " + nbrCages;
     }
+
+    public boolean addAnimal(Animal animal) {
+        for (int i = 0; i < this.animals.length; i++){
+            if (this.animals[i] == null){
+                this.animals[i] = animal;
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

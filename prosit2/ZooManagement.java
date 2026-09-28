@@ -17,6 +17,16 @@ public class ZooManagement {
         Animal aigle = new Animal("Accipitridae", "Aigle", 3, false);
         Animal crocodile = new Animal("Crocodylidae", "Crocodile", 12, false);
 
+        if (!myZoo.addAnimal(tigre)){
+            System.out.println("Couldnt add tigre !");
+        }
+        
+        if (!myZoo.addAnimal(aigle))
+            System.out.println("Couldnt add aigle");
+        
+        if (!myZoo.addAnimal(crocodile))
+            System.out.println("Couldnt add crocodile");
+
         Zoo zoo2 = new Zoo("Friguia", "Bouficha", 25);
         zoo2.animals[0] = tigre;
         zoo2.animals[1] = aigle;
@@ -28,9 +38,8 @@ public class ZooManagement {
         System.out.println(myZoo.toString());
         System.out.println(zoo2);
 
-        System.out.println(lion);
-        System.out.println(tigre);
-        System.out.println(aigle);
-        System.out.println(crocodile);
+        for (int i=0; i<4; i++){
+            System.out.println(myZoo.animals[i]);
+        }
     }
 }
